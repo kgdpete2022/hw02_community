@@ -1,8 +1,8 @@
-from pydoc import describe
 from django.db import models
 from django.contrib.auth import get_user_model
 
 User = get_user_model()
+
 
 class Group(models.Model):
     title = models.CharField(max_length=200)
@@ -27,5 +27,3 @@ class Post(models.Model):
         blank=True,
         null=True,
     )
-    
-
