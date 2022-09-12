@@ -4,6 +4,7 @@ from .models import Post, Group
 
 POSTS_PER_PAGE = 10
 
+
 # Create your views here.
 def index(request):
     template = 'posts/index.html'
